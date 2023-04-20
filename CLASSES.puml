@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Equipe
+{
+    nom : String
+    ville : String
+}
+
+class Joueur
+{
+    nom : String
+    age : int
+    numeroJoueur : int
+    positionJoueur : String
+    equipe : Equipe
+}
+
+Joueur -> Equipe : 1
+Equipe -> Joueur : *
+
+
+@enduml

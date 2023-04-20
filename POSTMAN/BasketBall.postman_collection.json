@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "2e6e134c-efe4-44c5-aa19-d8360da06104",
+		"name": "BasketBall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26583875"
+	},
+	"item": [
+		{
+			"name": "Ajouter un joueur",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\" : \"Bird\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/joueur",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"joueur"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajouter une équipe à un joueur",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\" : \"Chicago Bulls\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/joueur/addJoueur/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"joueur",
+						"addJoueur",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
